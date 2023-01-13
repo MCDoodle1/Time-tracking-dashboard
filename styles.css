@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+
+/* Font families. */
+--ff-primary: 'Rubik', sans-serif;
+
+/* Font sizes. */
+--fs-xxxs: 0.500rem; /* 8 px */
+--fs-xxs: 0.600rem; /* 10 px */
+--fs-xs: 0.750rem; /* 12 px */
+--fs-s: 0.875rem;  /* 14 px */
+--fs-m: 1rem;      /* 16 px */
+--fs-l: 1.125rem;  /* 18 px */
+--fs-xl: 1.25rem;  /* 20 px */
+--fs-xxl: 1.5rem;  /* 24 px */
+--fs-xxxl: 2rem;   /* 32 px */
+--fs-4xl: 3rem;    /* 48 px */
+--fs-5xl: 4rem;    /* 64 px */
+--fs-6xl: 5rem;    /* 80 px */
+--fs-7xl: 6rem;    /* 96 px */
+--fs-8xl: 7rem;   /* 112 px */
+--fs-9xl: 8rem;   /* 128 px */
+--fs-10xl: 9rem;  /* 144 px */
+--fs-11xl: 10rem; /* 160 px */
+
+
+/* Font weights */
+--fw-s: 300;
+--fw-m: 400;
+--fw-l: 500;
+
+
+/* Colour scheme */
+--clr-primary-brand: hsl(246, 80%, 60%);
+
+--clr-primary-work: hsl(15, 100%, 70%);
+--clr-primary-play: hsl(195, 74%, 62%);
+--clr-primary-study: hsl(348, 100%, 68%);
+--clr-primary-exercise: hsl(145, 58%, 55%);
+--clr-primary-social: hsl(264, 64%, 52%);
+--clr-primary-selfcare: hsl(43, 84%, 65%);
+
+
+--clr-neutral-background: hsl(226, 43%, 10%);
+--clr-neutral-brand: hsl(235, 46%, 20%);
+--clr-neutral-medium: hsl(235, 40%, 66%);
+--clr-neutral-light: hsl(237, 82%, 91%);
+
+/* Line heights. */
+--lh-s: 1.25;
+--lh-m: 1.5;
+--lh-l: 2;
+
+/* Letter spacings. */
+--ls-s: 0.05em;
+--ls-m: 0.1em;
+--ls-l: 0.2em;
+
+/* Border radius */
+--border-radius: 0.5rem;
+--border-radius-bars: 0.2rem;
+--border-radius-circle: 50%;
+
+/* Borders */
+--border-m: 0.125rem;
+
+/* Width */
+
+--width-70: 70%;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {    
+    font-family: var(--ff-primary);
+    background: var(--clr-neutral-background);
+}
+
+img {
+    display: block;
+    width: 3rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-neutral-medium)
+}
+
+a:hover, :focus {
+    color: var(--clr-neutral-light)
+}
+
+
+h1 {
+    font-size: var(--fs-xxl);
+    color: var(--clr-neutral-light);
+    font-weight: var(--fw-s);
+}
+
+h2 {
+    font-size: var(--fs-xl);
+    color: var(--clr-neutral-light);
+    font-weight: var(--fw-s);
+}
+
+h3 {
+    font-size: var(--fs-s);
+    color: var(--clr-neutral-light);
+    font-weight: var(--fw-m);
+}
+
+h4 {
+    font-size: var(--fs-xs);
+    color: var(--clr-neutral-medium);
+    font-weight: var(--fw-m);
+}
+
+.container {
+    max-width: 375px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 0.75fr 0.25fr repeat(6, minmax(0, 1fr)); 
+    background-color: var(--clr-neutral-background);
+    gap: 1.25rem;
+    justify-content: center;
+    
+}
+
+.container__person {
+    display: flex;
+    background-color: var(--clr-primary-brand);
+    border-radius: var(--border-radius);
+    z-index: 1;
+}
+
+    .container__picture {
+        padding: 1.5rem; 
+        align-self: center;
+           
+    }
+        .container__picture img {
+            border: 0.15rem solid white;
+            border-radius: var(--border-radius-circle);       
+        }
+
+    .container__name {
+        align-self: center;
+    }
+
+        .container__name h4 {
+            margin-bottom: .3rem ;
+        }
+
+
+.container__period {
+    display: flex;
+    background-color: var(--clr-neutral-brand);
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin-top: -2rem;
+    padding: 2rem 1rem 1rem;
+    border-radius: var(--border-radius);
+}
+
+    .container__period--active {
+        color: var(--clr-neutral-light);
+    }   
+
+.container__work,
+.container__play,
+.container__study,
+.container__exercise,
+.container__social,
+.container__selfcare {
+    position: relative;  
+    display: grid;
+    grid-template-rows: 1fr 1fr;    
+}
+
+
+.container__logo {
+    border-radius: var(--border-radius);    
+}
+
+.container__logo img {
+    float: right;
+    margin-right: 1rem;
+}
+
+
+.container__logo--work {
+    background-color: var(--clr-primary-work);   
+}
+
+.container__logo--play {
+    background-color: var(--clr-primary-play);    
+}
+
+.container__logo--study {
+    background-color: var(--clr-primary-study);    
+}
+    
+.container__logo--exercise {
+    background-color: var(--clr-primary-exercise);    
+}
+    
+.container__logo--social {
+    background-color: var(--clr-primary-social);    
+}
+
+.container__logo--selfcare {
+    background-color: var(--clr-primary-selfcare);    
+}
+    
+    .container__text {
+            position: absolute;
+            width: 100%;
+            background-color: var(--clr-neutral-brand);
+            border-radius: var(--border-radius); 
+            display: grid;
+            grid-template-areas:  
+            "title dots"
+            "hours last";
+            align-self: flex-end;
+            padding: 1.5rem;        
+    }
+
+    .container__title { grid-area: title; }
+    .container__hours { grid-area: hours; }
+    .container__dots  { grid-area: dots;  }
+    .container__last  { grid-area: last;  }
+
+        .container__title,
+        .container__hours {
+            justify-self: flex-start;
+            align-self: flex-end;   
+        }
+
+        .container__title--bold {
+            font-weight: var(--fw-l);    
+        }
+
+        .container__dots,
+        .container__last {
+            justify-self: flex-end;
+            align-self:flex-end;
+        }
+
+        .container__dots--small {
+            width: 1.5rem;
+        }
+    
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: var(--clr-neutral-medium)
+}
+.attribution a { 
+    color: var(--clr-neutral-light)
+}
+
+
+@media (min-width: 900px) {
+    body {
+        max-width: 1440px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    h1 {
+        font-size: calc(var(--fs-xxl) * 2);
+    }
+    
+    h2 {
+        font-size: calc(var(--fs-xl) * 2); 
+    }
+    
+    h3 {
+        font-size: calc(var(--fs-s) * 1.25);
+    }
+    
+    h4 {
+        font-size: calc(var(--fs-xs) * 1.2);  
+    }
+    
+    img {
+        width: 4rem;   
+    }
+
+    .container {
+        min-width: 900px;
+        grid-template-rows: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-areas: 
+        "person work play study"
+        "person work play study"
+        "person work play study"
+        "person exercise social selfcare"
+        "period exercise social selfcare"
+        "period exercise social selfcare"    
+    }
+        .container__person { grid-area: person; }
+        .container__period { grid-area: period; }
+        .container__work { grid-area: work; }
+        .container__play { grid-area: play; }
+        .container__study { grid-area: study; }
+        .container__exercise { grid-area: exercise; }
+        .container__social{ grid-area: social; }
+        .container__selfcare { grid-area: selfcare; }
+
+
+        .container__person,
+        .container__period {
+            width: 100%;
+            display: grid;
+        }
+
+            .container__picture {
+                padding: 2rem;   
+            }
+
+            .container__picture img {
+                width: 5rem; 
+            }
+
+            .container__name {
+                padding: 0 2rem 4rem;
+            }
+
+            .container__period {
+                gap: 1rem;
+                justify-content:flex-start; 
+                align-content: space-around;
+                padding: 2.5rem 2rem 2rem;
+            }
+            
+            .container__text {    
+                grid-template-areas:  
+                "title dots"
+                "hours hours"
+                "last last"; 
+                padding: 1.5rem 1.5rem 1.5rem; 
+            }
+            .container__title { grid-area: title; }
+            .container__hours { grid-area: hours; }
+            .container__dots  { grid-area: dots;  }
+            .container__last  { grid-area: last;  }
+            
+            .container__title {
+                padding-bottom: 1rem;               
+            }
+
+            .container__dots {                
+                padding-bottom: 1.5rem;
+                width: 25%;
+            }
+
+            .container__hours {
+                padding: 0.6rem 0;
+            }
+
+            .container__last {
+                padding-bottom: .75rem;
+                justify-self: flex-start;
+            }
+        
+}
