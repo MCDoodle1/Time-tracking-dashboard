@@ -31,13 +31,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Version](./images/Desktop Version.png)
-![Mobile Version](./images/Mobile Version.png)
+![Desktop Version](./images/Desktop.png)
+![Mobile Version](./images/Mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/MCDoodle1/Time-tracking-dashboard]
+- Live Site URL: [https://mcdoodle1.github.io/Time-tracking-dashboard/]
 
 ## My process
 
@@ -61,9 +61,9 @@ Continue projects to become more "fluent" in writing HTML, CSS and JS. New learn
 
 ### Useful resources
 
-- [BEM 101 - CSS-Tricks] ([https://css-tricks.com/bem-101/]) 
-- [Reading JSON file in Javascript] ([https://www.freecodecamp.org/news/how-to-read-json-file-in-javascript/]) - This clearly explains the options but unfortunately I got the CORS error message even when I loaded in Visual Studio's internal server.
+- BEM 101 - CSS-Tricks [https://css-tricks.com/bem-101/] 
+- Reading JSON file in Javascript [https://www.freecodecamp.org/news/how-to-read-json-file-in-javascript/] - This clearly explains the options but unfortunately I got the CORS error message even when I loaded in Visual Studio's internal server.
 
 ## Author
 
-- Frontend Mentor - [@MCDoodle1]([https://www.frontendmentor.io/profile/mcdoodle1])
+- Frontend Mentor - @MCDoodle1 [https://www.frontendmentor.io/profile/mcdoodle1]
