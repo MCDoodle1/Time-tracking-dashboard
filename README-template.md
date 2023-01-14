@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Version] (./images/Desktop Version.png)
-![Mobile Version] (./images/Mobile Version.png)
+![Desktop Version](./images/Desktop Version.png)
+![Mobile Version](./images/Mobile Version.png)
 
 ### Links
 
